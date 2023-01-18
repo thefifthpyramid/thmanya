@@ -1,0 +1,62 @@
+.main-navbar{
+  font-family: 'Tajawal', sans-serif;
+  .bg-light {
+    background-color: #fff!important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .navbar-expand-lg .navbar-nav .active a.nav-link{
+    padding-right: 0;
+  }
+
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 7px;
+  display: inline-block;
+  border-radius: inherit;
+  background: #fff;
+  opacity: .4;
+}
+.swiper-pagination-bullet-active{
+  background: #fff;
+  opacity: 1;
+}
