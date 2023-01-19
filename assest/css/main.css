@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   background-color: #f5f5f5;
+  margin-bottom: 1000px;
 }
 
 a {
@@ -301,6 +302,54 @@ button:focus {
   font-size: 16px;
   padding-right: 5px;
   line-height: 1.3;
+}
+
+.footer {
+  text-align: right;
+  padding: 50px 0;
+}
+.footer .logo_area {
+  text-align: center;
+}
+.footer .logo_area img {
+  width: 169px;
+  margin-top: 20px;
+}
+.footer .lanks-tag ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.footer .contect-details .copy-right::after, .footer .contect-details .copy-right::before {
+  position: absolute;
+  content: "";
+  bottom: 47px;
+  width: 90%;
+  height: 1px;
+  background: #e1e1e1;
+  display: block;
+  margin: auto;
+}
+.footer .contect-details .copy-right::before {
+  bottom: 116px;
+}
+.footer .contect-details ul {
+  display: flex;
+  justify-content: center;
+}
+.footer .contect-details ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+.footer .contect-details ul li a {
+  padding: 20px 25px;
+}
+.footer .contect-details .links ul li {
+  margin-top: 5px;
+}
+.footer .contect-details .links ul li a {
+  font-size: 14px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
