@@ -308,6 +308,22 @@ button:focus {
   line-height: 1.3;
 }
 
+.podcast-sec {
+  position: relative;
+}
+.podcast-sec .sec-name {
+  margin-bottom: 20px;
+}
+.podcast-sec .sec-name h3:after {
+  position: absolute;
+  content: "";
+  right: 117px;
+  top: 88px;
+  width: 100px;
+  height: 3px;
+  background: #bb1919;
+}
+
 .main-article .carousel-item img {
   height: 200px;
   width: 100%;

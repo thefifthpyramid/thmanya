@@ -1,3 +1,19 @@
+.podcast-sec{
+    position: relative;
+    .sec-name{
+        margin-bottom: 20px;
+        h3:after{
+            position: absolute;
+            content: "";
+            right: 117px;
+            top: 88px;
+            width: 100px;
+            height: 3px;
+            background: #bb1919;
+        }
+    } 
+}
+
 .main-article{
     .carousel-inner::after{
         
