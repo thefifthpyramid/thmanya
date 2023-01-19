@@ -1,19 +1,5 @@
 
-
-// ---- ---- Const ---- ---- //
-let inputBox = document.querySelector('.input-box'),
-  searchIcon = document.querySelector('.search'),
-  closeIcon = document.querySelector('.close-icon');
-
-
-// if ($('.search').hasClass('open')){
-    
-// } else {
-//     $('#takeonebar').addClass('slamdown');
-// }
-// ---- ---- Open Input ---- ---- //
- 
-
+//Search Input
 $('.search').click(function () { 
     $('.input-box').addClass('open');
 });
@@ -24,10 +10,20 @@ $('.close-icon').click(function () {
     $('.input-box').removeClass('open');
 });
 
+// End Search Animation Input 
 
 // Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
+  spaceBetween: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+// prodcast-sec
+var swiper = new Swiper(".prodcast-sec", {
+  slidesPerView: 3,
   spaceBetween: 1,
   pagination: {
     el: ".swiper-pagination",

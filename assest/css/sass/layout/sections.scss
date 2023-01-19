@@ -17,3 +17,32 @@
         content: none !important;
     }
 }
+.sub-article{
+    margin-top: 20px;
+    .prodcast-item{
+        margin: 0 20px;
+        width: 300px;
+        .prodcast-content{
+            .category a{
+                color: #bb1919;
+                font-size: 14px;
+            }
+            img{
+                height: 200px;
+            }
+            .prodcast-title{
+                font-size: 19px;
+                margin: 10px 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .read-more{
+        display: flex;
+        justify-content: center;
+        margin-top: 132px;
+    }
+}
+.carousel-item .carousel-caption .prodcast-headline a{
+    color: $mainColor;
+}

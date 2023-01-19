@@ -324,6 +324,35 @@ button:focus {
   content: none !important;
 }
 
+.sub-article {
+  margin-top: 20px;
+}
+.sub-article .prodcast-item {
+  margin: 0 20px;
+  width: 300px;
+}
+.sub-article .prodcast-item .prodcast-content .category a {
+  color: #bb1919;
+  font-size: 14px;
+}
+.sub-article .prodcast-item .prodcast-content img {
+  height: 200px;
+}
+.sub-article .prodcast-item .prodcast-content .prodcast-title {
+  font-size: 19px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.sub-article .read-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 132px;
+}
+
+.carousel-item .carousel-caption .prodcast-headline a {
+  color: #1E1E1E;
+}
+
 .footer {
   text-align: right;
   padding: 50px 0;
