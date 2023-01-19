@@ -1,0 +1,19 @@
+.main-article{
+    .carousel-inner::after{
+        
+    }
+    .carousel-item img{
+        height: 200px;
+        width: 100%;
+    }.carousel-caption{
+        position: relative;
+        color: $mainColor;
+        .category{
+            color: #bb1919;
+            margin-top: 35px;
+        }
+    }
+    .carousel-item:before{
+        content: none !important;
+    }
+}
