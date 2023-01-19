@@ -1,13 +1,25 @@
+
+
 // ---- ---- Const ---- ---- //
 let inputBox = document.querySelector('.input-box'),
   searchIcon = document.querySelector('.search'),
   closeIcon = document.querySelector('.close-icon');
 
+
+// if ($('.search').hasClass('open')){
+    
+// } else {
+//     $('#takeonebar').addClass('slamdown');
+// }
 // ---- ---- Open Input ---- ---- //
-searchIcon.addEventListener('click', () => {
-  inputBox.classList.add('open');
+ 
+
+$('.search').click(function () { 
+    $('.input-box').addClass('open');
 });
+    
+
 // ---- ---- Close Input ---- ---- //
-closeIcon.addEventListener('click', () => {
-  inputBox.classList.remove('open');
+$('.close-icon').click(function () { 
+    $('.input-box').removeClass('open');
 });
