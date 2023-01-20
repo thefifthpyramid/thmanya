@@ -1,6 +1,15 @@
+.latest-posts.wedgit{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 29px;
+    .section-head h2:after{
+        right: 10px;
+        top: 43px;
+    }
+}
 .sidbare-wedgit{
     position: relative;
-    margin-top: 29px;
+    margin-bottom: 29px;
     background-color: #fff;
     padding: 10px;
     padding-bottom: 20px;

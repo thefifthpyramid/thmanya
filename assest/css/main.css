@@ -385,20 +385,22 @@ button:focus {
   line-height: 40px;
 }
 
-.podcast-sec {
+.sec-name {
+  margin-bottom: 20px;
   position: relative;
 }
-.podcast-sec .sec-name {
-  margin-bottom: 20px;
-}
-.podcast-sec .sec-name h3:after {
+.sec-name h3:after {
   position: absolute;
   content: "";
-  right: 117px;
-  top: 88px;
+  right: 0;
+  top: 41px;
   width: 100px;
   height: 3px;
   background: #bb1919;
+}
+
+.podcast-sec {
+  position: relative;
 }
 
 .main-article .carousel-item img {
@@ -422,35 +424,52 @@ button:focus {
 .sub-article {
   margin-top: 20px;
 }
-.sub-article .prodcast-item {
-  margin: 0 20px;
-  width: 300px;
-}
-.sub-article .prodcast-item .prodcast-content .category a {
-  color: #bb1919;
-  font-size: 14px;
-}
-.sub-article .prodcast-item .prodcast-content img {
-  height: 200px;
-}
-.sub-article .prodcast-item .prodcast-content .prodcast-title {
-  font-size: 19px;
-  margin: 10px 0;
-  margin-bottom: 20px;
-}
 .sub-article .read-more {
   display: flex;
   justify-content: center;
   margin-top: 132px;
 }
 
+.prodcast-item {
+  margin: 0 20px;
+  width: 100%;
+}
+.prodcast-item .prodcast-content .category a {
+  color: #bb1919;
+  font-size: 14px;
+}
+.prodcast-item .prodcast-content img {
+  height: 200px;
+}
+.prodcast-item .prodcast-content .prodcast-title {
+  font-size: 19px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
 .carousel-item .carousel-caption .prodcast-headline a {
   color: #1E1E1E;
 }
 
+.hot-news .prodcast-item {
+  margin: 0 20px;
+  width: 100%;
+  height: 306px;
+}
+
+.latest-posts.wedgit {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 29px;
+}
+.latest-posts.wedgit .section-head h2:after {
+  right: 10px;
+  top: 43px;
+}
+
 .sidbare-wedgit {
   position: relative;
-  margin-top: 29px;
+  margin-bottom: 29px;
   background-color: #fff;
   padding: 10px;
   padding-bottom: 20px;
