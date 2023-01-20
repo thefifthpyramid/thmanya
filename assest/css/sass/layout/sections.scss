@@ -73,10 +73,62 @@
     // background-color: azure;
     .sec-name{
         margin-bottom: 33px;
+        h3{
+            font-size: 20px;
+        }
     }
     .prodcast-item{
         margin: 0 20px;
         width: 100%;
         height: 306px;
+    }
+}
+
+//newsletter
+.newsletter{
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 50px 0;
+    .headline h3{
+        color: #C8492D !important;
+    }
+    p{
+        margin-bottom: -2px;
+    }
+    .note::before{
+        content: '*';
+        color: red;
+        font-size: 22px;
+        position: relative;
+        top: 7px;
+        left: 3px;
+    }
+    .title{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    form{
+        .form-check{
+            margin-bottom: 20px;
+        }input{
+            border-radius: 0;
+            height: 40px;
+            padding: 1rem;
+            line-height: 0.5;
+        }
+        input[type=submit]{
+            border: 1px solid #000;
+            width: 90%;
+            background: #000;
+        }
+        .form-check:first-of-type{
+            margin-right: -2px;
+        }
+        .form-check-inline .form-check-input{
+            margin-left: 10px;
+            width: 17px;
+            height: 20px;
+        }
     }
 }

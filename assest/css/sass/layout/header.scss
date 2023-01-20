@@ -3,6 +3,18 @@
   .bg-light {
     background-color: #fff!important;
   }
+  .navbar-nav .dropdown-menu {
+    text-align: right;
+    border-radius: 0;
+    .dropdown-item{
+      padding: 0.25rem .5rem;
+    }
+  }.dropdown-toggle::after{
+    margin-left: 4.235em;
+    position: relative;
+    left: -7px;
+    top: 2px;
+  }
   .navbar-light .navbar-nav .nav-link {
     color: #000000;
     // font-weight: bold;

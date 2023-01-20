@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   background-color: #f5f5f5;
+  text-align: right;
 }
 
 a {
@@ -54,6 +55,19 @@ button:focus {
 }
 .main-navbar .bg-light {
   background-color: #fff !important;
+}
+.main-navbar .navbar-nav .dropdown-menu {
+  text-align: right;
+  border-radius: 0;
+}
+.main-navbar .navbar-nav .dropdown-menu .dropdown-item {
+  padding: 0.25rem 0.5rem;
+}
+.main-navbar .dropdown-toggle::after {
+  margin-left: 4.235em;
+  position: relative;
+  left: -7px;
+  top: 2px;
 }
 .main-navbar .navbar-light .navbar-nav .nav-link {
   color: #000000;
@@ -454,10 +468,60 @@ button:focus {
 .hot-news .sec-name {
   margin-bottom: 33px;
 }
+.hot-news .sec-name h3 {
+  font-size: 20px;
+}
 .hot-news .prodcast-item {
   margin: 0 20px;
   width: 100%;
   height: 306px;
+}
+
+.newsletter {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 50px 0;
+}
+.newsletter .headline h3 {
+  color: #C8492D !important;
+}
+.newsletter p {
+  margin-bottom: -2px;
+}
+.newsletter .note::before {
+  content: "*";
+  color: red;
+  font-size: 22px;
+  position: relative;
+  top: 7px;
+  left: 3px;
+}
+.newsletter .title {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.newsletter form .form-check {
+  margin-bottom: 20px;
+}
+.newsletter form input {
+  border-radius: 0;
+  height: 40px;
+  padding: 1rem;
+  line-height: 0.5;
+}
+.newsletter form input[type=submit] {
+  border: 1px solid #000;
+  width: 90%;
+  background: #000;
+}
+.newsletter form .form-check:first-of-type {
+  margin-right: -2px;
+}
+.newsletter form .form-check-inline .form-check-input {
+  margin-left: 10px;
+  width: 17px;
+  height: 20px;
 }
 
 .latest-posts.wedgit {
