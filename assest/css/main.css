@@ -261,6 +261,22 @@ button:focus {
 .latest-posts {
   overflow: hidden;
 }
+.latest-posts .section-head {
+  text-align: right;
+  margin-bottom: 35px;
+}
+.latest-posts .section-head h2 {
+  font-size: 20px;
+}
+.latest-posts .section-head h2:after {
+  position: absolute;
+  content: "";
+  right: 17px;
+  top: 34px;
+  width: 60px;
+  height: 3px;
+  background: #bb1919;
+}
 .latest-posts .slick-arrow {
   position: absolute;
   top: -32px;
@@ -334,6 +350,7 @@ button:focus {
 
 .page-content {
   text-align: right;
+  margin-top: 20px;
 }
 .page-content .article {
   background-color: white;
@@ -429,6 +446,31 @@ button:focus {
 
 .carousel-item .carousel-caption .prodcast-headline a {
   color: #1E1E1E;
+}
+
+.sidbare-wedgit {
+  position: relative;
+  margin-top: 29px;
+  background-color: #fff;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.search-wedgit .section-head {
+  text-align: right;
+  margin-bottom: 35px;
+}
+.search-wedgit .section-head h2 {
+  font-size: 20px;
+}
+.search-wedgit .section-head h2:after {
+  position: absolute;
+  content: "";
+  right: 9px;
+  top: 41px;
+  width: 60px;
+  height: 3px;
+  background: #bb1919;
 }
 
 .footer {
