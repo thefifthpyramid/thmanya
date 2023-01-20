@@ -164,3 +164,12 @@ $('button.slick-prev').html('<i class="fa fa-angle-up" aria-hidden="true"></i>')
 $('button.slick-next').html('<i class="fa fa-angle-down" aria-hidden="true"></i>');
 
 });
+
+//dark mode
+const darkmode = new darken({
+    toggle: "#dm-toggle",
+    variables: {
+        "--primary-color": ["#ffffff", "#000000"],
+        "--text-color": ["#000000", "#ffffff"],
+    }
+});

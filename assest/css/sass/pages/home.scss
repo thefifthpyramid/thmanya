@@ -144,7 +144,8 @@
     }
     .latest-item{
         margin-bottom: 7px;
-        background: #fff;
+        background-color: var(--primary-color);
+        color: var(--text-color);
         .col-md-7{padding-right: 0;}
         .news-image{
             margin: 0;

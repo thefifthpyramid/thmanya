@@ -30,12 +30,11 @@
     
 }
 .our-client{
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 50px 0;
     .head{
         text-align: center;
-        
-        
         h2~span{
             display: block;
             width: 150px;
@@ -51,7 +50,8 @@
     margin-top: 0;
     .section{
         &.aboutUs-sec{
-            background-color: #fff;
+            background-color: var(--primary-color);
+            color: var(--text-color);
         }
         .content{
             padding-top: 20px;

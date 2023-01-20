@@ -1,13 +1,19 @@
 .main-navbar{
   font-family: 'Tajawal', sans-serif;
   .bg-light {
-    background-color: #fff!important;
+    background-color: var(--primary-color) !important;
   }
   .navbar-nav .dropdown-menu {
     text-align: right;
     border-radius: 0;
+    background-color: var(--primary-color);
     .dropdown-item{
       padding: 0.25rem .5rem;
+      color: var(--text-color);
+      &:focus, &:hover{
+        color: black;
+
+      }
     }
   }.dropdown-toggle::after{
     margin-left: 4.235em;
@@ -16,7 +22,7 @@
     top: 2px;
   }
   .navbar-light .navbar-nav .nav-link {
-    color: #000000;
+    color: var(--text-color) !important;
     // font-weight: bold;
     // position: relative;
     transition: all .5s ease-in-out;
@@ -86,20 +92,20 @@
     background-color: #fff;
     border-radius: 6px;
     cursor: pointer;
+    color: black;
   }
   .input-box.open .search {
     border-radius: 6px 0 0 6px;
   }
   .search .search-icon {
     font-size: 30px;
-    color: #1c1c1c;
   }
   .input-box .close-icon {
     position: absolute;
     top: 50%;
     right: -45px;
     font-size: 20px;
-    color: #1c1c1c;
+    color: var(--text-color) !important;
     padding: 5px;
     transform: translateY(-50%);
     transition: all 0.5s ease-in-out;
@@ -125,7 +131,8 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 
   /* Center slide text vertically */
   display: -webkit-box;

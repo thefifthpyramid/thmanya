@@ -1,11 +1,22 @@
 .footer{
     text-align: right;
     padding: 50px 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     .logo_area{
         text-align: center;
-        img{
+        img,button{
             width: 169px;
-            margin-top: 40px;        
+            margin-top: 40px;       
+        }button{
+            padding: 4px 0;
+            border: 1px;
+            background-color: var(--text-color);
+            color: var(--primary-color);
+            transition: all .3s ease-in-out;
+            &:hover{
+                box-shadow: 3px 3px 1px #afbaae;
+            }
         }
     }
     .lanks-tag{

@@ -10,7 +10,8 @@
 .sidbare-wedgit{
     position: relative;
     margin-bottom: 29px;
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 10px;
     padding-bottom: 20px;
 }
