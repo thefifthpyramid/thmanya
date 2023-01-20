@@ -24,6 +24,26 @@ button:focus {
   padding: 50px 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1300px;
@@ -37,10 +57,14 @@ button:focus {
 }
 .main-navbar .navbar-light .navbar-nav .nav-link {
   color: #000000;
+  transition: all 0.5s ease-in-out;
 }
 .main-navbar .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+}
+.main-navbar .navbar-light .navbar-nav .nav-link:focus, .main-navbar .navbar-light .navbar-nav .nav-link:hover {
+  color: #6e6e6e;
 }
 .main-navbar .navbar-expand-lg .navbar-nav .active a.nav-link {
   padding-right: 0;
@@ -415,6 +439,29 @@ button:focus {
 .footer .contect-details .links ul li a {
   font-size: 14px;
   padding: 5px;
+}
+
+#scroll-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  display: none;
+}
+#scroll-up #scroll-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #bb1919;
+  border: 2px solid white;
+  color: whitesmoke;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+#scroll-up #scroll-btn:hover {
+  border-color: #5c0b0b;
 }
 
 /*# sourceMappingURL=main.css.map */

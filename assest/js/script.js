@@ -1,10 +1,41 @@
+$(function(){
+    // vars
+    var htmlAndBodyElements = $('html, body');
+    var csrollToTop = $('#scroll-up');
 
-//Search Input
+/*
+    ####################################
+    ** scroll-up
+    ####################################
+*/
+$(window).scroll(function(){
+    // Start feature csroll_to_top
+    if($(window).scrollTop() >= 300){
+        
+        if(csrollToTop.is(':hidden')){
+            csrollToTop.fadeIn(1000);
+        }
+
+    }else{
+        csrollToTop.fadeOut(1000);
+    }
+    /////////////////////////////////
+    ///////////// popUp ////////////
+});
+csrollToTop.on('click',function(){
+    htmlAndBodyElements.animate({
+        scrollTop: 0
+    },1000);
+});
+/*
+    ####################################
+    ** Search Input
+    ####################################
+*/
 $('.search').click(function () { 
     $('.input-box').addClass('open');
 });
     
-
 // ---- ---- Close Input ---- ---- //
 $('.close-icon').click(function () { 
     $('.input-box').removeClass('open');
@@ -12,7 +43,11 @@ $('.close-icon').click(function () {
 
 // End Search Animation Input 
 
-// Initialize Swiper
+/*
+    ####################################
+    ** Initialize Swiper
+    ####################################
+*/
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 1,
@@ -21,7 +56,11 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-// prodcast-sec
+/*
+    ####################################
+    ** prodcast-section
+    ####################################
+*/
 var swiper = new Swiper(".prodcast-sec", {
   slidesPerView: 3,
   spaceBetween: 1,
@@ -33,15 +72,12 @@ var swiper = new Swiper(".prodcast-sec", {
 
 
 
-// Latest Posts
-/**
-
-    This fiddle is using the latest version 
-    of Slick (from master) and jQuery.
-
-**/
-
-
+/*
+    ####################################
+    ** Latest Posts
+    ** This fiddle is using the latest version  of Slick (from master) and jQuery.
+    ####################################
+*/
 $(".slider").slick({
   asNavFor: '.nav',
   slidesToShow: 1,
@@ -126,3 +162,5 @@ $(".nav, .slider").each(function() {
 //
 $('button.slick-prev').html('<i class="fa fa-angle-up" aria-hidden="true"></i>');
 $('button.slick-next').html('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+
+});
