@@ -504,24 +504,27 @@ button:focus {
 }
 .footer .logo_area img {
   width: 169px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .footer .lanks-tag ul li {
   list-style-type: none;
   margin: 10px 0;
 }
+.footer .contect-details .copy-right {
+  position: relative;
+}
 .footer .contect-details .copy-right::after, .footer .contect-details .copy-right::before {
   position: absolute;
   content: "";
-  bottom: 47px;
+  bottom: 50px;
   width: 90%;
   height: 1px;
   background: #e1e1e1;
   display: block;
   margin: auto;
 }
-.footer .contect-details .copy-right::before {
-  bottom: 116px;
+.footer .contect-details .copy-right::after {
+  bottom: -11px;
 }
 .footer .contect-details ul {
   display: flex;
@@ -541,6 +544,20 @@ button:focus {
 .footer .contect-details .links ul li a {
   font-size: 14px;
   padding: 5px;
+}
+.footer .headline {
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer .headline:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -7px;
+  width: 60px;
+  height: 3px;
+  background: #bb1919;
 }
 
 #scroll-up {

@@ -5,7 +5,7 @@
         text-align: center;
         img{
             width: 169px;
-            margin-top: 20px;
+            margin-top: 40px;        
         }
     }
     .lanks-tag{
@@ -17,17 +17,20 @@
         } 
     }
     .contect-details{
+        .copy-right{
+            position: relative;
+        }
         .copy-right::after,.copy-right::before{
             position: absolute;
             content: '';
-            bottom: 47px;
+            bottom: 50px;
             width: 90%;
             height: 1px;
             background: #e1e1e1;
             display: block;
             margin: auto;
-        }.copy-right::before{
-            bottom: 116px;
+        }.copy-right::after{
+            bottom: -11px;
         }
         ul {
             display: flex;
@@ -49,6 +52,20 @@
                     padding: 5px;
                 } 
             } 
+        }
+    }
+    .headline{
+        font-weight: bold;
+        margin-bottom: 15px;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: -7px;
+            width: 60px;
+            height: 3px;
+            background: #bb1919;
         }
     }
 }
