@@ -355,6 +355,8 @@ button:focus {
 .main-article .carousel-caption {
   position: relative;
   color: #1E1E1E;
+  text-align: right;
+  right: 3%;
 }
 .main-article .carousel-caption .category {
   color: #bb1919;
