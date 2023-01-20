@@ -175,7 +175,7 @@ const darkmode = new darken({
     },
     stylesheets: {
         id: "darken-stylesheet",
-        dark: "assest/css/dark.css",
-        light: "assest/css/light.css",
+        dark: "assets/css/dark.css",
+        light: "assets/css/light.css",
     },
 });
