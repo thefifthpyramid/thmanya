@@ -399,6 +399,37 @@ button:focus {
   line-height: 40px;
 }
 
+.innerpage_banner.about-us {
+  background-image: url(../img/about_us.jpg);
+  background-size: cover;
+  position: relative;
+  top: -1px;
+  width: 100%;
+  height: 300px;
+}
+.innerpage_banner.about-us::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(34, 34, 34, 0.6705882353);
+}
+.innerpage_banner.about-us .content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+.innerpage_banner.about-us .content h1 {
+  margin-top: 103px;
+}
+
 .sec-name {
   margin-bottom: 20px;
   position: relative;
