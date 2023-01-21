@@ -196,11 +196,9 @@ $('.sort-tablist li').click(function(e){
     $('#sort-type').removeClass('layout-grid layout-list').addClass($(this).attr('data-bs-toggle'));
 
 });
-// $('button').on('click',function(e) {
-//     if ($(this).hasClass('grid')) {
-//         $('#container ul').removeClass('list').addClass('grid');
-//     }
-//     else if($(this).hasClass('list')) {
-//         $('#container ul').removeClass('grid').addClass('list');
-//     }
-// });
+
+$('#myTab a').on('click', function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    $(this).addClass('active').siblings().removeClass('active');
+})
