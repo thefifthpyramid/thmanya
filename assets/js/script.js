@@ -165,8 +165,11 @@ $('button.slick-next').html('<i class="fa fa-angle-down" aria-hidden="true"></i>
 
 });
 
-//dark mode
-
+/*
+    ####################################
+    ** dark mode
+    ####################################
+*/
 const darkmode = new darken({
     toggle: "#dm-toggle",
     variables: {
@@ -179,3 +182,25 @@ const darkmode = new darken({
         light: "assets/css/light.css",
     },
 });
+
+
+/*
+    ####################################
+    ** Create List And Grid View category page
+    ####################################
+*/
+$('.sort-tablist li').click(function(e){
+    e.preventDefault();
+    
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#sort-type').removeClass('layout-grid layout-list').addClass($(this).attr('data-bs-toggle'));
+
+});
+// $('button').on('click',function(e) {
+//     if ($(this).hasClass('grid')) {
+//         $('#container ul').removeClass('list').addClass('grid');
+//     }
+//     else if($(this).hasClass('list')) {
+//         $('#container ul').removeClass('grid').addClass('list');
+//     }
+// });
