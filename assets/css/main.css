@@ -849,7 +849,55 @@ button:focus {
   background: #bb1919;
 }
 
+/* webkit */
+::-webkit-input-placeholder {
+  text-align: right;
+}
+
+/* mozilla */
+input:-moz-placeholder {
+  text-align: right;
+}
+
+input::placeholder {
+  text-align: right;
+}
+
 /* Login And Register Page */
+.form-group label {
+  color: #fff;
+}
+.form-group select {
+  height: 45px;
+  color: #9e9e9e !important;
+}
+.form-group select.form-control:focus {
+  padding: 6px 0;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border-color: #ff365d;
+}
+.form-group select option {
+  background-color: #243b55;
+  color: white;
+}
+
+.sign-page .register-box {
+  margin-top: 130px !important;
+  height: 556px !important;
+}
+.sign-page .register-box input[type=file]#file-upload {
+  display: none;
+}
+.sign-page .register-box .custom-file-upload {
+  border: 1px solid #ff365d;
+  height: 48px;
+  padding: 11px 12px;
+  color: #ff365d;
+  background: #dee7f7;
+  width: 100%;
+}
+
 .register-page {
   background: linear-gradient(#141e30, #243b55);
   display: grid;
@@ -866,16 +914,6 @@ button:focus {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-.register-page .register-box {
-  width: 600px;
-}
-.register-page .register-box .custom-file-upload {
-  border: 1px solid #ff365d;
-  height: 48px;
-  padding: 11px 12px;
-  color: #ff365d;
-  background: #dee7f7;
-}
 .register-page .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
@@ -885,7 +923,7 @@ button:focus {
 .register-page .login-box .user-box {
   position: relative;
 }
-.register-page .login-box .user-box input {
+.register-page .login-box .user-box input, .register-page select {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -899,7 +937,7 @@ button:focus {
 .register-page .login-box .user-box label {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;

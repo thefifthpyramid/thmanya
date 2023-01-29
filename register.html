@@ -18,24 +18,55 @@
 <body dir="rtl">
 
 <!--Start login Page-->
-<div class="register-page">
-    <div class="login-box">
-        <h2>Login</h2>
-        <form method="post" action="#">
-            <div class="user-box">
-                <input type="text" name="Username" required="">
-                <label>الاسم</label>
+<div class="register-page sign-page">
+    <div class="login-box register-box">
+        <h2>التسجيل بالموقع</h2>
+        <form method="post" action="" enctype="multipart/form-data">
+            <!-- -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="user-box">
+                        <input type="text" name="userName" pattern=".{4,}" title="UserName Must Be More Than 4 Characters" required>
+                        <label>الاسم</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="file-upload" class="custom-file-upload">
+                        الصورة الشخصية
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </label>
+                    <input id="file-upload" type="file" name="avatar">
+                </div>
             </div>
+
+            <!-- -->
             <div class="user-box">
-                <input type="password" name="pass" required="">
+                <input type="email" name="email" required>
+                <label>البريد الالكتروني</label>
+            </div>
+            <!-- -->
+            <div class="user-box">
+                <input type="password" name="password1" minlength="4" required>
                 <label>الرقم السري</label>
             </div>
+            <!-- -->
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">نوع الكاتب</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>كتابة الإعلانات</option>
+                  <option>التحرير</option>
+                  <option>الصحافة</option>
+                  <option>مدير المحتوى</option>
+                </select>
+              </div>
+            <!-- -->
             <button type="submit">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Login
+                تسجيل
             </button>
         </form>
     </div>
