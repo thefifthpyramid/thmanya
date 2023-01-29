@@ -126,6 +126,7 @@ input::placeholder { text-align:right; }
         0 0 25px #ff365d,
         0 0 50px #ff365d,
         0 0 100px #ff365d;
+        border-color: #ff365d;
     }
 
     .login-box button span {
@@ -208,3 +209,6 @@ input::placeholder { text-align:right; }
         }
     }
 }
+
+
+// Second version

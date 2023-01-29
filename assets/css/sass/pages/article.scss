@@ -38,3 +38,72 @@
         }
     }
 }
+
+.sec-review{
+    padding: 20px 20px;
+    background-color: #0c0c0c;
+    .border{
+        margin-bottom: 30px !important;
+        margin-top: 30px !important;
+        border: 1px solid #000000!important;
+    }
+    .comments{
+        .counter{
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            position: relative;
+            &:after{
+                position: absolute;
+                content: "";
+                right: 0px;
+                bottom: -4px;
+                width: 100px;
+                height: 3px;
+                background: rgb(187, 25, 25);
+            }
+        }
+        .comment-box{
+            margin-bottom: 20px;
+            background-color: #eee;
+            padding: 10px;
+            padding-top: 23px;
+            .avatar img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            .com-details{
+                .com-name{
+                    font-weight: bold;
+                }
+                .com-body{
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .add-comment{
+        padding: 10px;
+        margin-top: 30px;
+        .form-group{
+            label{
+                color: var(--text-color);
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+        button{
+            background-color: #bb1919;
+            border: 2px solid white;
+            color: whitesmoke;
+            border-radius: 0;
+            margin-top: 5px;
+            &:hover {
+                border-color: #5c0b0b;
+                background-color: #bb1919;
+            }
+        }
+    }
+    
+}

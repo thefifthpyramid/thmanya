@@ -48,6 +48,14 @@ button:focus {
   background: #555;
 }
 
+.border {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: var(--text-color);
+}
+
 :root {
   --primary-color: #ffffff;
   --text-color: #000000;
@@ -409,6 +417,68 @@ button:focus {
 .page-content .article .article-content {
   font-size: 21px;
   line-height: 40px;
+}
+
+.sec-review {
+  padding: 20px 20px;
+  background-color: #0c0c0c;
+}
+.sec-review .border {
+  margin-bottom: 30px !important;
+  margin-top: 30px !important;
+  border: 1px solid #000000 !important;
+}
+.sec-review .comments .counter {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+}
+.sec-review .comments .counter:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  bottom: -4px;
+  width: 100px;
+  height: 3px;
+  background: rgb(187, 25, 25);
+}
+.sec-review .comments .comment-box {
+  margin-bottom: 20px;
+  background-color: #eee;
+  padding: 10px;
+  padding-top: 23px;
+}
+.sec-review .comments .comment-box .avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.sec-review .comments .comment-box .com-details .com-name {
+  font-weight: bold;
+}
+.sec-review .comments .comment-box .com-details .com-body {
+  margin-top: 8px;
+}
+.sec-review .add-comment {
+  padding: 10px;
+  margin-top: 30px;
+}
+.sec-review .add-comment .form-group label {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 20px;
+}
+.sec-review .add-comment button {
+  background-color: #bb1919;
+  border: 2px solid white;
+  color: whitesmoke;
+  border-radius: 0;
+  margin-top: 5px;
+}
+.sec-review .add-comment button:hover {
+  border-color: #5c0b0b;
+  background-color: #bb1919;
 }
 
 .category-page .wrapper-header {
@@ -969,6 +1039,7 @@ input::placeholder {
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #ff365d, 0 0 25px #ff365d, 0 0 50px #ff365d, 0 0 100px #ff365d;
+  border-color: #ff365d;
 }
 .register-page .login-box button span {
   position: absolute;

@@ -11,7 +11,8 @@
     background-color: #232323;
     border-color: #4d4d4d;
 }
-a,.btn-link{
+a,.btn-link,
+.sec-review .comments .comment-box .com-details .com-date{
     color: #dedede;
 }
 a:hover,.btn-link:hover {
@@ -27,4 +28,21 @@ a:hover,.btn-link:hover {
 }
 .faq-sec .card .btn-link{
     color: #fff;
+}
+.sec-review .form-control ,
+.sec-review .form-control{
+    background-color: #0e0e0e;
+    color: white;
+}
+
+::placeholder { color: #fff; }
+
+.sec-review .border{
+    border: 1px solid rgb(209 209 209) !important;
+}
+
+
+.sec-review .comments .comment-box,
+.sec-review .add-comment{
+    background-color: #101010;
 }
