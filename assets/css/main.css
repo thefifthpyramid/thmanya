@@ -659,6 +659,31 @@ button:focus {
   max-height: 100%;
 }
 
+.faq-sec .card {
+  margin-bottom: 20px;
+}
+.faq-sec .card .btn-link {
+  font-weight: bold;
+  color: #010101;
+}
+.faq-sec .card .card-body {
+  padding: 15px 35px;
+}
+.faq-sec .card .card-body ul {
+  margin-right: 41px;
+}
+.faq-sec .card .card-body ul li {
+  margin-top: 10px;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-link.focus, .btn-link:hover, .btn-link {
+  text-decoration: none !important;
+}
+
 .sec-name {
   margin-bottom: 20px;
   position: relative;

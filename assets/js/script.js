@@ -196,9 +196,13 @@ $('.sort-tablist li').click(function(e){
     $('#sort-type').removeClass('layout-grid layout-list').addClass($(this).attr('data-bs-toggle'));
 
 });
-
+// about page
 $('#myTab a').on('click', function (e) {
     e.preventDefault();
     $(this).tab('show');
     $(this).addClass('active').siblings().removeClass('active');
 })
+
+// faq page
+
+

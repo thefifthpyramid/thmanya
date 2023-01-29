@@ -11,13 +11,20 @@
     background-color: #232323;
     border-color: #4d4d4d;
 }
-a{
+a,.btn-link{
     color: #dedede;
 }
-a:hover {
+a:hover,.btn-link:hover {
     color: #fff;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link,
+.card{
     background-color: #0e0e0e;
     border: 1px solid #a6a6a6;
+}
+.card-header{
+    border-bottom: 1px solid rgb(175 175 175 / 42%);
+}
+.faq-sec .card .btn-link{
+    color: #fff;
 }

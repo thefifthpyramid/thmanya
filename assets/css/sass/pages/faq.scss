@@ -1,0 +1,24 @@
+.faq-sec{
+    .card{
+        margin-bottom: 20px;
+        .btn-link {
+            font-weight: bold;
+            color: #010101;
+        }
+        .card-body{
+            padding: 15px  35px;
+            ul{
+                margin-right: 41px;
+                li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
+.btn-link.focus, .btn-link:hover,.btn-link {
+    text-decoration: none !important;
+}
