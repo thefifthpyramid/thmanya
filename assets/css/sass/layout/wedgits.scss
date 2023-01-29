@@ -14,7 +14,21 @@
     color: var(--text-color);
     padding: 10px;
     padding-bottom: 20px;
+    h2{
+
+        margin-bottom: 30px;
+        &:after{
+            position: absolute;
+            content: '';
+            right: 9px;
+            top: 55px;
+            width: 60px;
+            height: 3px;
+            background: #bb1919;
+        }
+    }
 }
+
 .search-wedgit{
     
     .section-head{
@@ -23,13 +37,50 @@
         h2{
             font-size: 20px;
             &:after{
-                position: absolute;
-                content: '';
-                right: 9px;
                 top: 41px;
-                width: 60px;
-                height: 3px;
-                background: #bb1919;
+            }
+        }
+    }
+}
+.tag-cloud-wedgit{
+    .section-head h2:after{
+        top: 57px;
+    }
+    .tagcloud{
+        a{
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-bottom: 10px;
+            margin-right: 4px;
+            border-radius: 4px;
+            color: var(--text-color);
+            border: 1px solid #ccc;
+            font-size: 14px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: #292929;
+            }
+        }
+    }
+}
+
+.category-wedgit{
+    .category-link{
+        ul li{
+            list-style-type: none;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #dee2e6;
+            a{
+                padding: 10px;
+            }span{
+                float: left;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+                padding-bottom: 0;
             }
         }
     }
