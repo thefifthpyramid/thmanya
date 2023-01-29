@@ -1,4 +1,4 @@
-//Main Class and style
+// Main Class and style
 @import "sass/layout/main.scss";
 
 //varibles file
@@ -10,27 +10,31 @@
 // Header Style
 @import "sass/layout/header.scss";
 
-//Home Page
+// Home Page
 @import "sass/pages/home.scss";
 
-//article Page
+// article Page
 @import "sass/pages/article.scss";
 
-//category Page
+// category Page
 @import "sass/pages/category.scss";
 
-//About us Page
+// About us Page
 @import "sass/pages/about.scss";
 
-
-//faq Page
+// faq Page
 @import "sass/pages/faq.scss";
 
-//sections Page
+
+// sections Page
 @import "sass/layout/sections.scss";
 
-//wedgits Page
+// wedgits Page
 @import "sass/layout/wedgits.scss";
+
+
+// register Page
+@import "sass/pages/register.scss";
 
 // Footer Style
 @import "sass/layout/footer.scss";
