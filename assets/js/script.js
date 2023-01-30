@@ -1,8 +1,13 @@
-$(function(){
+$(window).on('load', function () {
     // vars
     var htmlAndBodyElements = $('html, body');
     var csrollToTop = $('#scroll-up');
-
+/*
+    ####################################
+    ** loading
+    ####################################
+*/
+    $('#loading').hide();
 /*
     ####################################
     ** scroll-up

@@ -43,3 +43,6 @@ body{
     color: #bb1919;
     border: 1px solid #bb1919;
 }
+.category-page .wrapper-header .sort-tablist ul li.active, .category-page .box-item .box-content .box-title a:hover {
+    color: #bb1919;
+}
