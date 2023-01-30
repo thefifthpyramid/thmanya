@@ -7,7 +7,7 @@ $(window).on('load', function () {
     ** loading
     ####################################
 */
-    $('#loading').hide();
+    $('#loading').fadeOut(1000);
 /*
     ####################################
     ** scroll-up
