@@ -229,6 +229,7 @@ $('#myTab a').on('click', function (e) {
 // #############################################
 // Responsive
 
+
 if(window.innerWidth < 990){
     $('.main-navbar .input-box').addClass('open');
 }

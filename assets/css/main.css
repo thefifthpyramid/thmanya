@@ -1456,6 +1456,9 @@ input::placeholder {
   .category-page .layout-list .box-item .box-content .category a {
     font-size: 14px;
   }
+  .sidbare-wedgit, .latest-posts.wedgit {
+    display: none;
+  }
 }
 .page-content.category-page .sort-tablist .slick-slider {
   height: 50px;
@@ -1468,8 +1471,22 @@ input::placeholder {
   .newsletter .form-check-label {
     margin-bottom: 20px;
   }
-  .footer .logo_area {
+  .footer .logo_area button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .footer .logo_area img {
     display: none;
+  }
+  .page-content.about-page .section .content .box .slick-list {
+    height: 133px !important;
+  }
+  .page-content.about-page .section .content .head h2 {
+    margin-top: 25px;
+  }
+  .sign-page .register-box {
+    height: 636px !important;
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 576px) {

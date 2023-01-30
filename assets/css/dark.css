@@ -55,7 +55,16 @@ a:hover,.btn-link:hover {
 .topbar .bg-dark{
     background-color: #0e0e0e!important;
 }
-.main-navbar .input-box .search{
+.main-navbar .input-box .search,
+.main-navbar .bg-light{
     
-    background-color: #0e0e0e;
+    background-color: #0e0e0e !important;
+}
+.navbar-light .navbar-toggler{
+    color: #d4d4d4;
+    border-color:#d4d4d4;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+    content: "\f039";
 }
