@@ -3,3 +3,47 @@
         max-width: 1300px ;
     }
 }
+
+// from 0 to 1024 it will apper
+@media (max-width: 1024px) {
+    .topbar{
+        display: none;
+    }
+}
+
+@media (max-width: 778px) {
+    .sub-article .read-more{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .latest-posts{
+        margin-top: 50px;
+    }
+    .newsletter{
+        text-align: center;
+        .desc{
+            margin-bottom: 20px;
+        }
+    }
+    .footer .contect-details .copy-right::after, .footer .contect-details .copy-right::before{
+        bottom: 31px;
+
+    }.contect-details{
+        margin-top: 30px;
+        text-align: center;
+        .headline:after{
+            right: 45%;
+            width: 71px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .newsletter form input{
+        margin-bottom: 20px;
+    }
+    .newsletter .form-check-label{
+        margin-bottom: 20px;
+    }
+    
+}

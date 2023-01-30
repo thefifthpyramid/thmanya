@@ -75,6 +75,12 @@ var swiper = new Swiper(".prodcast-sec", {
   },
 });
 
+if(window.innerWidth < 1000){
+var swiper = new Swiper(".prodcast-sec", {
+    slidesPerView: 2,
+  });
+}
+
 
 
 /*

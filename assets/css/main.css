@@ -149,11 +149,6 @@ button:focus {
   --text-color: #000000;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1300px;
-  }
-}
 .topbar .navbar-nav .nav-link {
   transition: all 0.3s ease-in-out;
 }
@@ -1383,6 +1378,52 @@ input::placeholder {
 }
 #scroll-up #scroll-btn:hover {
   border-color: #5c0b0b;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1024px) {
+  .topbar {
+    display: none;
+  }
+}
+@media (max-width: 778px) {
+  .sub-article .read-more {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .latest-posts {
+    margin-top: 50px;
+  }
+  .newsletter {
+    text-align: center;
+  }
+  .newsletter .desc {
+    margin-bottom: 20px;
+  }
+  .footer .contect-details .copy-right::after, .footer .contect-details .copy-right::before {
+    bottom: 31px;
+  }
+  .contect-details {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .contect-details .headline:after {
+    right: 45%;
+    width: 71px;
+  }
+}
+@media (max-width: 768px) {
+  .newsletter form input {
+    margin-bottom: 20px;
+  }
+  .newsletter .form-check-label {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
