@@ -46,3 +46,16 @@ a:hover,.btn-link:hover {
 .sec-review .add-comment{
     background-color: #101010;
 }
+.main-forms .form-control{
+    background-color: #101010;
+}
+.topbar .navbar-nav .nav-link{
+    color: #d4d4d4;
+}
+.topbar .bg-dark{
+    background-color: #0e0e0e!important;
+}
+.main-navbar .input-box .search{
+    
+    background-color: #0e0e0e;
+}

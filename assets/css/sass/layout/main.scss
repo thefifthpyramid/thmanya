@@ -52,3 +52,15 @@ button:focus{
     margin: 10px auto;
     background-color: var(--text-color);
   }
+  .after{
+    
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: #bb1919;
+    margin: 10px auto;
+    margin-bottom: 40px;
+  }
+  .page-content.about-page .section .content .main-head h2.had-fater{
+    margin-bottom: 0 !important;
+  }

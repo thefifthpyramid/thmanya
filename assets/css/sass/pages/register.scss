@@ -11,7 +11,7 @@ input::placeholder { text-align:right; }
 
     }
 }
-.form-group{
+.register-box .form-group{
     label{
         color: #fff;
     }
@@ -212,3 +212,28 @@ input::placeholder { text-align:right; }
 
 
 // Second version
+.register.main-forms{
+    width: 800px;
+    margin: auto;
+    padding:40px 20px;
+    .form-group{
+        margin-bottom: 20px;
+        label{
+            color: var(--text-color);
+        }
+    }
+    .other-page{
+        color: var(--text-color);
+    }
+    .form-control{
+        border-radius: 0;
+        font-size: 17px;
+    }
+    [type="submit"]{
+        border-radius: 0 !important;
+        background: #ff365d;
+        color: #fff;
+        border-radius: 5px;
+        border-color: #ff365d;
+    }
+}

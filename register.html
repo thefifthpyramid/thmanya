@@ -31,15 +31,12 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="file-upload" class="custom-file-upload">
-                        الصورة الشخصية
-                        <i class="fa fa-upload" aria-hidden="true"></i>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </label>
-                    <input id="file-upload" type="file" name="avatar">
+                    <div class="user-box">
+                        <input type="number" name="phone" pattern=".{12,}" title="phone number Must Be More Than 4 Characters" required>
+                        <label>رقم الهاتف</label>
+                    </div>
                 </div>
             </div>
-
             <!-- -->
             <div class="user-box">
                 <input type="email" name="email" required>
