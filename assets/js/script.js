@@ -75,11 +75,20 @@ var swiper = new Swiper(".prodcast-sec", {
   },
 });
 
+// Responsive
+
 if(window.innerWidth < 1000){
-var swiper = new Swiper(".prodcast-sec", {
-    slidesPerView: 2,
-  });
+    var swiper = new Swiper(".prodcast-sec", {
+        slidesPerView: 2,
+    });
 }
+
+if(window.innerWidth < 576){
+    var swiper = new Swiper(".prodcast-sec", {
+        slidesPerView: 1,
+    });
+}
+       
 
 
 
@@ -217,3 +226,13 @@ $('#myTab a').on('click', function (e) {
 // faq page
 
 
+// #############################################
+// Responsive
+
+if(window.innerWidth < 990){
+    $('.main-navbar .input-box').addClass('open');
+}
+
+if(window.innerWidth < 570){
+    $('.main-navbar .input-box').removeClass('open');
+}
