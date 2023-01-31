@@ -14,10 +14,12 @@ body {
 a {
   color: black;
   color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--secondColor);
 }
 
 button:focus {
@@ -147,6 +149,7 @@ button:focus {
 :root {
   --primary-color: #ffffff;
   --text-color: #000000;
+  --secondColor: #bb1919;
 }
 
 .topbar .navbar-nav .nav-link {
@@ -932,6 +935,7 @@ button:focus {
 
 .newsletter {
   margin: 20px 0;
+  margin-top: 0;
   margin-bottom: 0;
   border-top: 1px solid rgb(228, 228, 228);
   border-bottom: 1px solid rgb(228, 228, 228);
@@ -1281,103 +1285,92 @@ input::placeholder {
 }
 
 /*Portfilo page*/
+.breadcrumb-item.active {
+  color: var(--secondColor);
+}
+
+.profile .wedgit {
+  margin-bottom: 20px !important;
+}
 .profile .card-body {
   transition: all 0.3s ease-in-out;
 }
-
+.profile .card-body table tr th a {
+  font-weight: normal;
+}
 .profile .card {
   background-color: #ffffff;
 }
-
 .profile .card-header {
   text-align: left;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
-
-.profile .position-right {
-  right: 0;
-  top: 7px;
-}
-
 .profile .card-header h4 {
   font-size: 16px;
   color: #726f6f;
   margin-bottom: 17px;
 }
-
 .profile .card-header h4:after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 42px;
   border-bottom: 1px solid #9d9d9d;
   width: 129px;
 }
-
 .profile .card-body:hover {
   background-color: rgba(246, 245, 245, 0.7098039216);
 }
-
 .profile .card-body:hover img {
   opacity: 1;
   transform: rotate(360deg);
   transition: all 0.5s ease-in-out;
 }
-
 .profile .form-group {
   margin: 25px 0;
   position: relative;
 }
-
 .profile .input-group-text {
   padding: 9px 12px;
 }
-
 .profile .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-
 .profile .form-control[type=file] {
   overflow: hidden;
 }
-
-.btn-file {
+.profile .btn-file {
   position: relative;
   overflow: hidden;
 }
-
-input[type=file]#file-upload {
+.profile input[type=file]#file-upload {
   display: none;
 }
-
-.custom-file-upload {
+.profile .custom-file-upload {
   border: 1px solid #ccc;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
   width: 100%;
 }
-
-.sub-link {
+.profile .sub-link {
   /*margin-left: 10px;*/
 }
-
-.user-avatar {
+.profile .user-avatar {
   margin-top: 20px;
   opacity: 0.8;
   width: 150px;
   height: 150px;
 }
-
-.text-c-yellow {
+.profile .text-c-yellow {
   color: #ffb64d;
 }
-
-.text-default {
+.profile .text-default {
   color: #d6d6d6;
 }
-
-.label {
+.profile .label {
   border-radius: 4px;
   font-size: 75%;
   padding: 4px 7px;
@@ -1385,27 +1378,26 @@ input[type=file]#file-upload {
   font-weight: 400;
   color: #fff;
 }
-
-.label-danger {
+.profile .label-danger {
   background: #ff5370;
 }
-
-.position-right {
+.profile .position-right {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+  width: 155px;
 }
-
-.card .card-header {
+.profile .card .card-header {
   background-color: transparent;
   border-bottom: none;
   padding: 12px 0px;
   position: relative;
-  text-align: left;
+  text-align: right;
   margin-bottom: 20px;
 }
-
-.btn-main, .sweet-alert button.confirm, .wizard > .actions a {
+.profile .btn-main,
+.profile .sweet-alert button.confirm,
+.profile .wizard > .actions a {
   background-color: #bb1919;
   border-color: #931313;
   color: #fff;
@@ -1413,28 +1405,25 @@ input[type=file]#file-upload {
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
-
-.btn-main:hover, .sweet-alert button.confirm:hover, .wizard > .actions a:hover {
+.profile .btn-main:hover,
+.profile .sweet-alert button.confirm:hover,
+.profile .wizard > .actions a:hover {
   background-color: #931313;
   border-color: #931313;
 }
-
-.text-primary {
+.profile .text-primary {
   color: #ffffff !important;
 }
-
-.btn-outline-main {
+.profile .btn-outline-main {
   color: #931313;
   border-color: #931313;
 }
-
-.btn-outline-main:hover {
+.profile .btn-outline-main:hover {
   color: #FFF;
   background-color: #931313;
   border-color: #931313;
 }
-
-.btn.btn-main:hover {
+.profile .btn.btn-main:hover {
   color: #fff;
 }
 

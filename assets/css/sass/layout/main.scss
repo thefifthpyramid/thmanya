@@ -12,9 +12,11 @@ body{
 }a{
     color: black;
     color: var(--text-color);
+    transition: all .3s ease-in-out;
 }
 a:hover{
     text-decoration: none;
+    color: var(--secondColor);
 }
 
 button:focus{
