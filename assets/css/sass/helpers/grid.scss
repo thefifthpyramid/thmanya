@@ -80,6 +80,12 @@
     .sidbare-wedgit ,.latest-posts.wedgit{
         display: none;
     }
+    
+    .profile.create-article{
+        .notification-wedgit,.wedgit{
+            display: none;
+        }
+    }
 }
 .page-content.category-page .sort-tablist .slick-slider{
     height: 50px;

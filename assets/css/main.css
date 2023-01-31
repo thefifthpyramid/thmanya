@@ -1648,6 +1648,9 @@ select ~ .fa-asterisk {
   .sidbare-wedgit, .latest-posts.wedgit {
     display: none;
   }
+  .profile.create-article .notification-wedgit, .profile.create-article .wedgit {
+    display: none;
+  }
 }
 .page-content.category-page .sort-tablist .slick-slider {
   height: 50px;
