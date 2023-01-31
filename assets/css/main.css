@@ -1292,6 +1292,26 @@ input::placeholder {
 .profile .wedgit {
   margin-bottom: 20px !important;
 }
+.profile .notification-wedgit i, .profile .notification-wedgit svg {
+  color: var(--secondColor);
+  margin-left: 5px;
+}
+.profile .notification-wedgit .card-body:hover {
+  background-color: #fff;
+}
+.profile .notification-wedgit .card-header {
+  padding-bottom: 0 !important;
+  padding-right: 10px !important;
+}
+.profile .notification-wedgit .card-header h4:after {
+  right: 8px;
+}
+.profile .notification-wedgit .card-header a {
+  padding: 0;
+}
+.profile .notification-wedgit .card-header a:hover {
+  color: var(--secondColor);
+}
 .profile .card-body {
   transition: all 0.3s ease-in-out;
 }
