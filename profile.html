@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet"/>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>ثمانية الاخباري</title>
+</head>
+<body dir="rtl">
+<!-- Start Loader -->
+<div id="loading">
+  <div class="loader">
+    <div class="inner one"></div>
+    <div class="inner two"></div>
+    <div class="inner three"></div>
+  </div>
+</div>
+<!-- End Loader -->
+
+<!-- Start TopBar -->
+<div class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-user"></i>
+              Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+              Register
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <button class="btn" id="dm-toggle">🌓</button>
+          </li> -->
+          
+        </ul>
+      </div>
+    </div><!-- End container -->
+  </nav>
+</div>
+<!-- End TopBar -->
+
+<!-- Start Nav-Bar -->
+<div class="main-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-align-justify" aria-hidden="true"></i>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"><img src="./assets/img/logo.png" alt="" srcset=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./category.html">الإذاعة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./category.html">النشرات البريدية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./article.html">موضوع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الشركة</a>
+              </li>
+              <li class="nav-item dropdown show ml-auto">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">اخرالبثوث</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                  <a class="dropdown-item" href="#">اقتصاد</a>
+                  <a class="dropdown-item" href="#">سياسة</a>
+                  <a class="dropdown-item" href="#">علوم</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav logo-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><img src="./assets/img/prodcast-17.jpg" alt="" srcset=""></a>
+            </li>
+          </ul>
+          
+            <form class="input-box" method="get" action="">
+                <input type="text" placeholder="بحث..." />
+                <span class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                <!-- <span class=" submit-hide">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span> -->
+                <span class="close-icon">
+                    <i class="uil uil-times  fa fa-times-circle" aria-hidden="true"></i>
+                </span>
+            </form>
+      </div>
+  </nav>
+</div>
+<!-- End Nav-Bar -->
+
+<section class="profile" style="background-color: #eee;">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                        <li class="breadcrumb-item"><a href="#">الاعضاء</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">احمد علي</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4"><!-- Left side -->
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="./assets/img/prodcast-4.jpg" alt="ahmed"
+                            class="rounded-circle img-fluid user-avatar">
+                        <h5 class="my-3">ahmed</h5>
+                        <p class="text-muted mb-1">Full Stack Developer</p>
+                        <p class="text-muted mb-4">admin@outlook.com</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <button type="button" class="btn btn-main m-1">Follow</button>
+                            <button type="button" class="btn btn-outline-main ms-1 m-1">Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fa fa-globe fa-lg text-warning"></i>
+                                <p class="mb-0">https://mdbootstrap.com</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fa fa-github fa-lg" style="color: #333333;"></i>
+                                <p class="mb-0">mdbootstrap</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fa fa-twitter fa-lg" style="color: #55acee;"></i>
+                                <p class="mb-0">@mdbootstrap</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fa fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                <p class="mb-0">mdbootstrap</p>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <i class="fa fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                <p class="mb-0">mdbootstrap</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8"><!-- right side -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h4 class="">My Details</h4>
+                            <a href="Edit_information.php"
+                                class="btn waves-effect waves-light btn-main btn-square position-right"> Edit <i
+                                    class="fa fa-edit text-primary"></i> </a>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa fa-lock fa-fw"></i> Login Name</td>
+                                    <td>ahmed</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-envelope-o fa-fw"></i> Email</td>
+                                    <td>admin@outlook.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left"><i class="fa fa-calendar fa-fw"></i> Register Date</td>
+                                    <td>2022-11-18</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-user fa-fw"></i> Full Name</td>
+                                    <td>Ahmed Ali Mohammed</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-tags fa-fw"></i> Fav Category</td>
+                                    <td>Ahmed Ali Mohammed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4">Project
+                                    Status
+                                </p>
+                                <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                                <div class="progress rounded mb-2" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 mb-md-0">
+                            <div class="card-body">
+                                <p class="mb-4"> Project
+                                    Status
+                                </p>
+                                <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                                <div class="progress rounded" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                                <div class="progress rounded mb-2" style="height: 5px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mt-4">
+                    <div class="card-body text-center">
+                        <div class="card-header">
+                            <h4 class="">My Products</h4>
+                            <a href="Create_product.php"
+                                class="btn waves-effect waves-light btn-main btn-square position-right"> Create New <i
+                                    class="fa fa-plus text-primary"></i> </a>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>price</th>
+                                    <th>created in</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="product-details.php?product_id=49">Colt Wooten</a></td>
+                                    <td>39</td>
+                                    <td>2022-12-09</td>
+                                    <td>Cars</td>
+                                    <td>
+                                        <label class="label label-danger">Approving</label>
+                                        <!-- <label class="label label-success">In Stock</label>-->
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-default"></i><i
+                                            class="fa fa-star f-12 text-default"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="product-details.php?product_id=48">Convertible</a></td>
+                                    <td>478</td>
+                                    <td>2022-12-09</td>
+                                    <td>Cars</td>
+                                    <td>
+                                        <label class="label label-danger">Approving</label>
+                                        <!-- <label class="label label-success">In Stock</label>-->
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-default"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="product-details.php?product_id=47">Crossover</a></td>
+                                    <td>1000000</td>
+                                    <td>2022-12-09</td>
+                                    <td>Cars</td>
+                                    <td>
+                                        <label class="label label-danger">Approving</label>
+                                        <!-- <label class="label label-success">In Stock</label>-->
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-c-yellow"></i><i
+                                            class="fa fa-star f-12 text-default"></i><i
+                                            class="fa fa-star f-12 text-default"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="card mb-4 mt-4">
+                    <div class="card-body text-center">
+                        <div class="card-header">
+                            <h4 class="">My Comments</h4>
+                        </div>
+                        there's no Comments
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Start Footer Section -->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-sm-12">
+          <div class="logo_area">
+            <img src="./assets/img/logo.png" alt="" srcset="">
+            <button id="dm-toggle">تبديل الوضع الليلي 🌓</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="lanks-tag">
+            <div class="headline">
+              روابط
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li><a href="#">الوظائف</a></li>
+                  <li><a href="#">المدونة</a></li>
+                  <li><a href="#">ثمانية الخلاقة</a></li>
+                  <li><a href="#">في الإعلام</a></li>
+                  <li><a href="#">الدستور</a></li>
+                </ul>
+              </div>
+              <div class="col-6 ">
+                <ul>
+                  <li><a href="about-v0.html">ماهي ثمانية</a></li>
+                  <li><a href="about.html">عن الشركة</a></li>
+                  <li><a href="#">النشرات البريدية</a></li>
+                  <li><a href="#">الأفلام</a></li>
+                  <li><a href="#">الإذاعة</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-3">
+        <div class="contect-details">
+          <div class="box">
+            <div class="headline">
+              تابعنا على
+            </div>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          
+          <div class="box text-center copy-right">
+            <p>2023 © جميع الحقوق محفوظة لشركة ثمانية للنشر والتوزيع</p>
+          </div>
+          <div class="box links">
+            <ul>
+              <li><a href="#">سياسة الخصوصية</a></li>
+              <li><a href="#">اتصل بنا</a></li>
+              <li><a href="faq.html">الأسئلة المكررة</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Footer Section -->
+  
+  <!-- Start scroll up -->
+  <div id="scroll-up">
+    <button id="scroll-btn" class="secondary-color" style="display: inline;">
+      <i class="fa fa-angle-up"></i>
+    </button>
+  </div>
+  <!-- End scroll up -->
+    <!-- Scripts -->
+      <!-- jquery  -->
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+  
+      <!-- bootstrap  -->
+      <script src="assets/js/bootstrap.min.js"></script>
+      
+      <!-- fontawesome  -->
+      <script src="assets/js/all.min.js"></script>
+  
+      <!-- Swiper JS -->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      
+      <!-- slick JS -->
+      <script src="assets/js/slick.min.js"></script>
+      
+      <!-- DarkMode script -->
+        <script src="./assets/js/darken.js"></script>
+  
+      <!-- My script -->
+      <script src="assets/js/script.js"></script>
+  </body>
+  </html>
