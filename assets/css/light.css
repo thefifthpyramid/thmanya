@@ -54,3 +54,6 @@ body{
     
     background-color: #f2f2f2;
 }
+.profile .card-header h4{
+    color: #000;
+}

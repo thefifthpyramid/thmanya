@@ -68,3 +68,33 @@ a:hover,.btn-link:hover {
     background-image: none;
     content: "\f039";
 }
+
+.profile ,
+.profile .bg-light .breadcrumb{
+    background-color: #0e0e0e;
+}
+.profile .card-body,.profile .card-body:hover,.list-group-item,
+.profile .notification-wedgit .card-body:hover,
+.profile .bg-light{
+    background-color: #000 !important;
+}.profile .notification-wedgit .card-header a ,
+.profile .card-header h4,
+.table{
+    color: rgb(245, 245, 245);
+}
+.list-group-item{
+    border: 1px solid #ffffff21;
+}
+
+
+.main-navbar .bg-light,
+.topbar {
+    border-bottom: 1px solid #323131;
+}
+.form-control,
+.form-control:focus,
+.tox:not(.tox-tinymce-inline) .tox-editor-header,
+.tox .tox-menubar{
+    color: #fff;
+    background-color: #000;
+}

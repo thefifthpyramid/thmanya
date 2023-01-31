@@ -3,6 +3,7 @@
     color: var(--secondColor);
 }
 .profile {
+    background-color: #eee;
     .wedgit{
         margin-bottom: 20px !important;
     }.notification-wedgit{
@@ -30,8 +31,13 @@
     .card-body {
         transition: all .3s ease-in-out;
         table{
-            tr th a{
-                font-weight: normal;
+            tr {
+                i,svg{
+                    color: var(--secondColor);
+                }
+                th a{
+                    font-weight: normal;
+                }
             }
         }
     }
@@ -163,8 +169,12 @@
         cursor: pointer;
         -webkit-transition: all ease-in .3s;
         transition: all ease-in .3s;
+        
     }
-
+    .card-header .btn-main{
+        position: relative;
+        top: -13px;
+    }
     .btn-main:hover,
     .sweet-alert button.confirm:hover,
     .wizard>.actions a:hover {
@@ -190,4 +200,17 @@
     .btn.btn-main:hover {
         color: #fff;
     }
+}
+
+// Create Article 
+
+.fa-asterisk {
+    color: #df0000;
+    font-size: 10px;
+    position: absolute;
+    left: 24px;
+    top: 14px;
+}
+select ~ .fa-asterisk{
+    left: 34px;
 }

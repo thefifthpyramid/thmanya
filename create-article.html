@@ -222,233 +222,73 @@
                   </div>
               </div>
               <!-- End Wedgit -->
-            </div>
+            </div><!-- End right side -->
             <div class="col-lg-8"><!-- left side -->
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h4 class="">بياناتي الشخصية</h4>
-                            <a href="Edit_information.php" class="btn waves-effect waves-light btn-main btn-square "> تعديل <i class="fa fa-edit text-primary"></i> </a>
+              <div class="card mb-4 create-article-page">
+                <div class="card-body">
+                  <div class="card-header">
+                    <h4 class="">انشاء مقال جديد</h4>
+                  </div>
+                  <form id="second" action="#" method="post" enctype="multipart/form-data">
+                    <!-- Start Form Group -->
+                    <div class="form-group row">
+                      <label class="col-sm-2 col-form-label">اسم المقال</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name" placeholder="عنوان المقال" required="off"
+                          pattern=".{4,}" title="UserName Must Be More Than 4 Characters">
+                          <i class="fa fa-asterisk"></i>
+                        <span class="messages popover-valid"></span>
+                      </div>
+                    </div><!-- End Form Group -->
+                    
+                    <!-- Start Form Group -->
+                    <div class="form-group row">
+                      <label class="col-sm-2 col-form-label">غلاف المقال</label>
+                      <div class="col-sm-10">
+                        <label for="file-upload" class="custom-file-upload">
+                          <i class="fa fa-upload" aria-hidden="true"></i> Upload article cover
+                        </label>
+                        <input id="file-upload" type="file" name="article_cover">
+                        <i class="fa fa-asterisk"></i>
+                      </div>
+                    </div><!-- End Form Group -->
+                    <!-- Start Form Group -->
+                    <div class="form-group row">
+                      <label for="category" class="col-sm-2 col-form-label">القسم</label>
+                      <div class="col-sm-10">
+                        <div >
+                          <select class="form-control" id="category">
+                            <option>اقتصاد</option>
+                            <option>فنون</option>
+                            <option>سياسة</option>
+                            <option>رياضة</option>
+                          </select>
+                          <i class="fa fa-asterisk"></i>
                         </div>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td><i class="fa fa-lock fa-fw"></i> اسم المستخدم</td>
-                                    <td>ahmed</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fa fa-envelope fa-fw"></i> البريد الالكتروني</td>
-                                    <td>admin@outlook.com</td>
-                                </tr>
-                                <tr>
-                                    <td class="">
-                                        <i class="fa fa-calendar fa-fw"></i> 
-                                        تاريخ التسجيل
-                                    </td>
-                                    <td>2022-11-18</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fa fa-user fa-fw"></i> الاسم كاملا</td>
-                                    <td>Ahmed Ali Mohammed</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fa fa-tags fa-fw"></i> الرتبة</td>
-                                    <td>محرر</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                      </div>
+                    </div><!-- End Form Group -->
+                    <!-- Start Form Group -->
+                    <div class="form-group row">
+                      <label class="col-sm-2 col-form-label">المقال</label>
+                      <div class="col-sm-10">
+                        <textarea id="article-textarea" name="description" placeholder="محتوي المقال"
+                          required="required"><i
+                          class="fa fa-asterisk"></i>
+                          </textarea>
+                        <span class="messages popover-valid"></span>
+                      </div>
+                    </div><!-- End Form Group -->
+              
+                    <div class="row">
+                      <label class="col-sm-2"></label>
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-main">ارسال المقال للمراجعة</button>
+                      </div>
                     </div>
+                  </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card mb-4 mb-md-0">
-                            <div class="card-body">
-                                <p class="mb-4">
-                                    معدل النشاط علي الموقع
-                                </p>
-                                <p class="mb-1" style="font-size: .77rem;">25/2/1991</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2022</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2002</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2000</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">25/2/2000</p>
-                                <div class="progress rounded mb-2" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card mb-4 mb-md-0">
-                            <div class="card-body">
-                                <p class="mb-4">
-                                    معدل التفاعلات
-                                </p>
-                                <p class="mb-1" style="font-size: .77rem;">11/2/2022</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2022</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2002</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">11/2/2000</p>
-                                <div class="progress rounded" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <p class="mt-4 mb-1" style="font-size: .77rem;">25/2/2000</p>
-                                <div class="progress rounded mb-2" style="height: 5px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card Box -->
-                <div class="card mb-4 mt-4">
-                    <div class="card-body text-center">
-                        <div class="card-header">
-                            <h4 class="">تعليقاتي</h4>
-                        </div>
-                        لاتوجد تعليقات لك بعد
-                    </div>
-                </div>
-                <!-- End Card Box -->
-                <!-- Card Box -->
-                <div class="card mb-4 mt-4">
-                    <div class="card-body text-center">
-                        <div class="card-header">
-                            <h4 class="">مقالاتي</h4>
-                            <a href="create-article.html" class="btn waves-effect waves-light btn-main btn-square "> انشاء مقال جديد <i class="fa fa-plus text-primary"></i> </a>
-                        </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>اسم المقال</th>
-                                    <th>تاريخ الكتابة</th>
-                                    <th>تاريخ النشر</th>
-                                    <th>القسم</th>
-                                    <th>الحالة</th>
-                                    <th>عدد التعليقات</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="article.html">الحرب العالمبة الثالثة</a></td>
-                                    <td>22/2/2021</td>
-                                    <td>2022-12-09</td>
-                                    <td>سياسة</td>
-                                    <td>
-                                        <label class="label label-danger">معلق</label>
-                                        <!-- <label class="label label-success">In Stock</label>-->
-                                    </td>
-                                    <td>
-                                        565
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="article.html">تقدم القوات الروسية</a></td>
-                                    <td>22/2/2021</td>
-                                    <td>2022-12-09</td>
-                                    <td>سياسة</td>
-                                    <td>
-                                        <label class="label label-danger">معلق</label>
-                                        <!-- <label class="label label-success">In Stock</label>-->
-                                    </td>
-                                    <td>
-                                      565
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="article.html">حرب شمال الاطلس</a></td>
-                                    <td>22/2/2021</td>
-                                    <td>2022-12-09</td>
-                                    <td>سياسة</td>
-                                    <td>
-                                        <label class="label label-danger">معلق</label>
-                                        <!-- <label class="label label-success">In Stock</label>-->
-                                    </td>
-                                    <td>
-                                        256
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- End Card Box -->
-                <!-- Card Box -->
-                <div class="card mb-4 mt-4">
-                    <div class="card-body text-center">
-                        <div class="card-header">
-                            <h4 class="">My Comments</h4>
-                        </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>الكومنت</th>
-                                    <th>الخبر</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0</td>
-                                    <td>احسنت العمل</td>
-                                    <td><a href="./article.html">عرض الخبر</a></td>
-                                </tr>
-                                <tr>
-                                    <td>0</td>
-                                    <td>لم افهم المخزي من الخبر</td>
-                                    <td><a href="./article.html">عرض الخبر</a></td>
-                                </tr>
-                                <tr>
-                                    <td>0</td>
-                                    <td>العالم علي حافة الانهيار</td>
-                                    <td><a href="./article.html">عرض الخبر</a></td>
-                                </tr>
-                                <tr>
-                                    <td>0</td>
-                                    <td>بوتن لن يتهاون مع هذه الهزيمة</td>
-                                    <td><a href="./article.html">عرض الخبر</a></td>
-                                </tr>
-                                <tr>
-                                    <td>0</td>
-                                    <td>امريكا خزت العالم اجمع بخسارتها وخيانتها</td>
-                                    <td><a href="./article.html">عرض الخبر</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- End Card Box -->
-
-            </div>
+              </div>
+            </div><!-- End left side -->
         </div>
     </div>
 </section>
@@ -597,7 +437,7 @@
       
       <!-- DarkMode script -->
         <script src="./assets/js/darken.js"></script>
-  
+        <script src="https://cdn.tiny.cloud/1/wunl6c9l68q1hhw98v55of7sadftd1k6ikwvfutg2mlh5bkg/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
       <!-- My script -->
       <script src="assets/js/script.js"></script>
   </body>

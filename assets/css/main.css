@@ -1289,6 +1289,9 @@ input::placeholder {
   color: var(--secondColor);
 }
 
+.profile {
+  background-color: #eee;
+}
 .profile .wedgit {
   margin-bottom: 20px !important;
 }
@@ -1314,6 +1317,9 @@ input::placeholder {
 }
 .profile .card-body {
   transition: all 0.3s ease-in-out;
+}
+.profile .card-body table tr i, .profile .card-body table tr svg {
+  color: var(--secondColor);
 }
 .profile .card-body table tr th a {
   font-weight: normal;
@@ -1425,6 +1431,10 @@ input::placeholder {
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
+.profile .card-header .btn-main {
+  position: relative;
+  top: -13px;
+}
 .profile .btn-main:hover,
 .profile .sweet-alert button.confirm:hover,
 .profile .wizard > .actions a:hover {
@@ -1445,6 +1455,18 @@ input::placeholder {
 }
 .profile .btn.btn-main:hover {
   color: #fff;
+}
+
+.fa-asterisk {
+  color: #df0000;
+  font-size: 10px;
+  position: absolute;
+  left: 24px;
+  top: 14px;
+}
+
+select ~ .fa-asterisk {
+  left: 34px;
 }
 
 .footer {
